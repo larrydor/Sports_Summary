@@ -8,8 +8,8 @@ load_dotenv()
 API = os.getenv("RAPID_API")
 
 print("-------------------------")
-x = input("Select your sports team:")
-print("Sports team selected:", x)
+x = input("Select your sports team: ")
+print("Sports team selected: ", x)
 print("Let me look that up for you...")
 
 conn = http.client.HTTPSConnection("imdb8.p.rapidapi.com")
@@ -42,7 +42,5 @@ print(type(parsed_response))
 print(parsed_response.keys())
 #print(parsed_response)
 pprint(response.text)
-
-
 
 
