@@ -41,7 +41,7 @@ parsed_response = json.loads(response.text)
 print(type(parsed_response))
 print(parsed_response.keys())
 #print(parsed_response)
-#print(response.text)
+pprint(response.text)
 
 
 
